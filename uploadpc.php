@@ -81,5 +81,5 @@ try {
     // ส่ง JSON response error
     header('Content-Type: application/json');
     echo json_encode(['status' => 'error', 'message' => 'Connection failed: ' . $e->getMessage()]);
-    exit;//
+    exit;
 }
