@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped:wght@100;200;300;400;500;600;700;800;900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans Thai Looped", sans-serif, Bold;
+    font-size: 14px;
+}
+
+body {
+    background-image: url('images/3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    background: linear-gradient(to right, #e2e2e2b7, #c9d6ffc7);
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container span {
+    font-size: 12px;
+}
+
+.container a {
+    color: #292727;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.container button {
+    background-color: #131314;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container form {
+    background: linear-gradient(to right, #d3cce3bd, #e9e4f0a1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 0 40px;
+    margin-top: 20px;
+    height: 100%;
+}
+
+.container input {
+    background-color: #fff6f6;
+    font-size: 14px;
+    color: #292828; /* Default text color */
+    border: 2px solid #ff6f61; /* Default border color */
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 15px;
+    width: 100%;
+    outline: none;
+}
+
+/* Define keyframes for border animation */
+@keyframes border-animation {
+    0% { border-color: #ff6f61; }
+    25% { border-color: #6fff61; }
+    50% { border-color: #61ff6f; }
+    75% { border-color: #616fff; }
+    100% { border-color: #ff6f61; }
+}
+
+/* Apply animation on input focus */
+.container input:focus {
+    background-color: #e2e8fa;
+    color: #292727; /* Text color when input is focused */
+    animation: border-animation 2s infinite; /* Animation with infinite loop */
+}
+
+::placeholder {
+    color: rgb(27, 27, 27);
+    opacity: 1; /* Firefox */
+}
+
+.container .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+/* Style for checkbox */
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #110d1d; /* Change checkbox color */
+}
+
+/* Style for label associated with checkbox */
+input[type="checkbox"] + label {
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.show-password-toggle {
+    /* ... (สไตล์เดิม) ... */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* ระยะห่างระหว่างไอคอนและข้อความ */
+}
+
+
+.sign-in, .sign-up {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in {
+    order: 1;
+}
+
+.sign-up {
+    display: none; /* Hide the sign-up form */
+}
